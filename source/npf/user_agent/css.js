@@ -1257,7 +1257,7 @@ npf.userAgent.css.isNthChildSupported = function() {
 
     npf.userAgent.css.nthChild_ =
       npf.userAgent.utils.testStyles(styles, function(elem) {
-        var elems = elem.getElementsByTagName(goog.dom.TagName.DIV);
+        var elems = goog.dom.getElementsByTagName(goog.dom.TagName.DIV, elem);
         /** @type {boolean} */
         var supports = true;
 
